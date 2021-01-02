@@ -1,0 +1,23 @@
+{
+  "name": "proyectoIntegrador",
+  "version": "1.0.0",
+  "description": "Temática: nuestro e-commerce será dedicado a la venta de instrumentos musicales, accesorios y life style",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberts6/grupo_8_musicstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberts6/grupo_8_musicstore/issues"
+  },
+  "homepage": "https://github.com/roberts6/grupo_8_musicstore#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
