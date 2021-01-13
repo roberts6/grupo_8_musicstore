@@ -2,7 +2,7 @@
 
 Temática: nuestro e-commerce será dedicado a la venta de instrumentos musicales, accesorios y life style
 
-Público objetivo: cualquier persona mayor a 18 años que pueda tomar decisiones sobre comprar un producto en nuestra tienda.
+Público objetivo: cualquier persona mayor a 18 años que esté autorizado a tomar decisiones sobre comprar un producto en nuestra tienda.
 
 referentes:
 
