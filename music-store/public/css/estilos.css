@@ -12,7 +12,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 15px;
 }
 
 .logo{
@@ -23,11 +22,11 @@ header{
 }
 
 .titulo{
-    font-family: 'Amatic SC', cursive; 
+    font-family: 'Amatic SC', cursive;
     font-weight: bold;
     width: 50%;
-    font-size: 140%;
-    margin-top: 32px;
+    font-size: 6vw;
+    margin: 5% 0%;
 }
 
 .options{
@@ -36,11 +35,13 @@ header{
     border: solid 1px black;
     color: black;
     align-content: center;
-    margin: 30px 20px 20px;
-    padding: 5px;
+    margin: 30px 20px 20px 2px;
+    padding: 2%;
     width: 80%;
-    height: 35%;
-    position: relative
+    height: 33%;
+    position: relative;
+    left: 4vw;
+    top: -4vw;
 }
 
 .options li {
@@ -49,7 +50,7 @@ header{
     width: 7%;
     position: relative;
     bottom: 5px;
-    right: 5px;
+    left: 5px;
 }
 
 .main-options{
@@ -67,21 +68,9 @@ nav {
     justify-content: space-around;
 }
 
-.opciones{
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    border: solid yellow 4px;
-    justify-content: space-between; 
-    list-style: none;
-}
-
 .cajas{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 80px;
     position: relative;
     transition: all 450ms;
     margin: 10px 0px;
@@ -141,7 +130,6 @@ display: flex;
 }
 
 .producto-auricular img{ 
-    height: 85%;
     display: flex;
     transition: all 450ms;
 }
@@ -157,10 +145,9 @@ img{
 
 .banner{
     display: flex;
-    width: 80%;
-    max-width: 1200px;
+    width: 75vw;
     position: relative;
-    left: 35px;
+    left: 14vw;
     margin: 0px;
 }
 
@@ -170,24 +157,117 @@ img{
     width: 100%;
     margin: 0px;
     color: white;
-    font-size: 130%;
+    font-size: 5vw;
     padding: 0px 10px;
     text-align: center;
     list-style: none;
-    margin: 15px 0px;
+    margin: 10vw 0%;
 }
 
-@media(min-width: 600px){
-    p{
-        background: coral;
-        color: black;
+/* comienza el css dell detalle de productos */
+
+.bodydetalles{
+    margin: auto;
+    padding: 1%;
+}
+
+.detalle-producto{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: auto;
+}
+
+.detalle-producto img{
+    width: 10vw;
+}
+
+.detalle-producto p{
+    width: 75vw;
+    height: 50vw;
+    font-size: 1.85vw;
+    position: relative;
+}
+
+.detalle-producto .precio{
+    width: 10vw;
+    position: relative;
+    top: 30vw;
+    right: 53vw;
+    font-size: 4vw;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    z-index: 1;
+}
+
+.detalle-producto button{
+    height: 7vw;
+    position: relative;
+    font-size: 6vw;
+    top: 25vw;
+    transition: all 450ms;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    top: 2vw;
+}
+
+.detalle-producto:hover button{
+    background-image: initial;
+    background-color: white;
+    border: 3px rgb(247, 200, 112) solid;
+    text-decoration: none;
+}
+
+.detalle-producto:active button{
+    background-image: initial;
+    background-color: rgb(247, 200, 112);
+    text-decoration: none;
+}
+
+@media(min-width: 361px){
+   .options i{
+    font-size: 3.2vw;
+   }
+
+   .options li{
+    margin: 9%;
+    left: -2px;
+   }
+
+   .options a i{
+       justify-content: space-between;
+   }
+
+   .options{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    left: 25%;
+    top: -2vw;
+}
+
+
+
+}
+
+@media(min-width: 500px){
+    .options{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    left: 25%;
+    top: 7%;
     }
 }
 
-@media(min-width: 900px){
-    p{
-        background: green;
-        color: wheat;
+@media(min-width: 814px){
+    .options{
+        top: 2.4vw;
     }
 }
 
