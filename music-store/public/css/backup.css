@@ -1,0 +1,28 @@
+.detalle-producto .precio{
+    width: 10vw;
+    height: 15%;
+    position: relative;
+    top: 40vw;
+    right: 73vw;
+    font-size: 4vw;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    z-index: 1;
+}
+
+.detalle-producto button{
+    height: 5vw;
+    position: relative;
+    font-size: 3vw;
+    top: 39vw;
+    right: 12vw;
+    transition: all 450ms;
+}
+
+.info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    position: relative;
+    top: -17vw;
+}

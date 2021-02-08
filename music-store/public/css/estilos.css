@@ -15,9 +15,9 @@ header{
 }
 
 .logo{
-    width: 12%;
-    height: 12%;
-    margin: 20px 10px;
+    width: 8%;
+    height: 8%;
+    margin: 3% 3%;
     border-radius: 15%;
 }
 
@@ -27,35 +27,46 @@ header{
     width: 50%;
     font-size: 6vw;
     margin: 5% 0%;
+    position: relative;
+    left: 9%;
+    z-index: 1;
 }
 
 .options{
     list-style: none;
     display: flex;
     border: solid 1px black;
-    color: black;
     align-content: center;
     margin: 30px 20px 20px 2px;
     padding: 2%;
-    width: 80%;
-    height: 33%;
+    width: 50%;
+    height: 20%;
     position: relative;
-    left: 4vw;
-    top: -4vw;
+    left: 30%;
+    top: -2vw;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.7 )
+}
+
+.options i{
+    color: rgb(0,0,0);
+    background-image: initial;
+    font-size: 2vw;
+    position: absolute;
 }
 
 .options li {
     display: flex;
-    margin: 8px;
-    width: 7%;
+    margin: 5px;
+    width: 5%;
     position: relative;
     bottom: 5px;
-    left: 5px;
+    left: -4px;
 }
 
 .main-options{
-    align-content: center;
-    width: 35%;
+    width: 30%;
+    position: relative;
 }
 
 h1{ text-align: center;
@@ -76,40 +87,34 @@ nav {
     margin: 10px 0px;
 }
 
+.producto{
+    width: 50%;
+}
+
 .producto img{ 
     height: 80%;
+    width: 90%;
+    margin: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
+    border: 1px solid black;
 }
 
 .producto h3{
     display: none;
     position: relative;
-    top: -65px;
+    top: -100px;
     left: 10px;
     text-align: center;
     color: black;
     background-image: initial;
     background-color: white;
-    width: 80%;
+    width: 85%;
     font-size: 120%;
     transition: all 450ms;
 }
 
-.producto-auricular h3{
-    display: none;
-    position: relative;
-    top: -65px;
-    left: 10px;
-    text-align: center;
-    color: black;
-    background-image: initial;
-    background-color: white;
-    width: 80%;
-    font-size: 120%;
-    transition: all 450ms;
-}
 
 .bajos, 
 .baterias,
@@ -119,51 +124,41 @@ nav {
 
 .producto:hover h3{
 display: flex;
+border: solid 1px black;
 }
-
-.producto-auricular:hover h3{
-    display: flex;
-    }
-
-.producto-auricular{
-    padding: 0px;
-}
-
-.producto-auricular img{ 
-    display: flex;
-    transition: all 450ms;
-}
-
-img{
-    width: 80%;
-    height: 80%;
-    margin: 10px;
-    transition: all 450ms;
-}
-
-
 
 .banner{
     display: flex;
     width: 75vw;
+    height: 30vh;
     position: relative;
-    left: 14vw;
-    margin: 0px;
+    margin: 0px auto;
 }
+
 
 .pie{
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin: 0px;
-    color: white;
-    font-size: 5vw;
+    font-size: 3.5vw;
     padding: 0px 10px;
     text-align: center;
     list-style: none;
     margin: 10vw 0%;
 }
 
+.accion-pie a{
+    color: white;
+    transition: all 450ms;
+    z-index: 1;
+}
+
+.accion-pie:hover a{
+font-size: 5vw;
+color: red;
+}
+ 
 /* comienza el css dell detalle de productos */
 
 .bodydetalles{
@@ -174,47 +169,56 @@ img{
 .detalle-producto{
     display: flex;
     justify-content: space-between;
-    width: 70vw;
-    margin: auto;
-}
-
-.detalle-producto img{
-    width: 10vw;
-}
-
-.detalle-producto p{
+    width: 100vw;
+    height: 30vw;
     width: 75vw;
-    height: 50vw;
-    font-size: 1.85vw;
+    margin: 10% 10%;
+}
+
+.imagen-descripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
     position: relative;
+    top: 90%;
+    right: 40%;
+    width: 75vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin: 0px -15%;
 }
 
 .detalle-producto .precio{
-    width: 10vw;
-    position: relative;
-    top: 30vw;
-    right: 53vw;
-    font-size: 4vw;
     background-image: initial;
     background-color: rgba(255, 255, 255, 0.5 );
     z-index: 1;
 }
 
-.detalle-producto button{
-    height: 7vw;
-    position: relative;
-    font-size: 6vw;
-    top: 25vw;
-    transition: all 450ms;
+.info select{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    z-index: 1;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    position: relative;
-    top: 2vw;
+.detalle-producto img{
+    width: 14vw;
+    height: 100%;
 }
+
+.detalle-producto p{
+    width: 75vw;
+    height: 20vw;
+    font-size: 1.85vw;
+    position: relative;
+    margin: 2% 3%;
+}
+
+
 
 .detalle-producto:hover button{
     background-image: initial;
@@ -231,12 +235,13 @@ img{
 
 @media(min-width: 361px){
    .options i{
-    font-size: 3.2vw;
+    position: absolute;
    }
 
    .options li{
     margin: 9%;
-    left: -2px;
+    left: 0px;
+    bottom: 1.3vw;
    }
 
    .options a i{
@@ -244,30 +249,25 @@ img{
    }
 
    .options{
-    width: 60%;
-    height: 30%;
+    width: 50%;
+    height: 20%;
     position: relative;
-    left: 25%;
-    top: -2vw;
+    top: -7%;
+}
 }
 
-
-
+@media(min-width: 450px){
+    .options {top: 6%;}
 }
 
-@media(min-width: 500px){
-    .options{
-    width: 60%;
-    height: 30%;
-    position: relative;
-    left: 25%;
-    top: 7%;
-    }
+@media(min-width: 600px){
+    .options {top: 12%;}
 }
+
 
 @media(min-width: 814px){
     .options{
-        top: 2.4vw;
+        top: 22%;
     }
 }
 
