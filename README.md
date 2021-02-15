@@ -11,3 +11,8 @@ referentes:
 3) https://www.gibson.com/
 4) https://www.musicaveerkamp.com/marcas
 5) https://www.nike.com/mx/
+
+
+
+Tablero :
+https://trello.com/b/jHhYoh9o/trabajo-integrador
