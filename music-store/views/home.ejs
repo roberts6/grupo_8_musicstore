@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <meta name="viewport" content="width=device-wid th, initial-scale=1">    
+    <!--Esta etiqueta meta sirve para dejar listo el html para que nuestra página sea responsive a cualquier dispositivo-->
+    <!--la otra parte necesaria para terminar de programar una página responsive son las medias queries que se colocan en el fondo del css-->
+</head>
+<%- include ('./partials/header') %>
+<body class="cuerpo-de-la-web">
+    <video class="banner" src="/img/Rock Band Concert.mp4"></video>    
+    
+    <div class="cajas">
+    
+    <article class="producto">
+        <a href="/detalles" ><img src="/img/frigobar.jpg" alt="lifestyle"></a>
+    <h3 class="lifestyle">Lifestyle</h3>
+    </article>
+    
+    <article class="producto">
+        <a href="/detalles" ><img src="/img/guitarra.jpeg" alt="Guitarra"></a>
+    <h3 class="guitarras">Guitarras</h3>
+    </article> 
+    
+    <article class="producto">   
+        <a href="#" ><img src="/img/bajo.jpeg" alt="Bajo"></a>
+    <h3 class="bajos">Bajos</h3>
+    </article>
+    
+    <article class="producto">
+        <a href="#" ><img src="/img/auriculares.jpeg" alt="Audio"></a>
+    <h3 class="audio">Audio</h3>
+    </article>
+    
+    <article class="producto">
+        <a href="/detalles" ><img src="/img/bateria.jpeg" alt="Baterías"></a>
+    <h3 class="baterias">Baterías</h3>
+    </article>    
+    </div>
+
+    <img class="banner" src="/img/segundobanner.jpg" alt="segundobanner">
+
+<%- include ('./partials/footer') %>
+
+</body>
+</html>

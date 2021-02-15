@@ -1,5 +1,5 @@
 *{
-    background-image: url(/static/img/instrumentos.jpg);
+    background-image: url(/img/instrumentos.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -85,6 +85,7 @@ nav {
     position: relative;
     transition: all 450ms;
     margin: 10px 0px;
+    
 }
 
 .producto{
@@ -136,6 +137,14 @@ border: solid 1px black;
 }
 
 
+footer{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    border: solid 0.2px;
+    line-height:0;
+    margin-top: 8vw;
+}
+
 .pie{
     display: flex;
     justify-content: space-around;
@@ -146,17 +155,23 @@ border: solid 1px black;
     text-align: center;
     list-style: none;
     margin: 10vw 0%;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .accion-pie a{
     color: white;
     transition: all 450ms;
     z-index: 1;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0 );
 }
 
 .accion-pie:hover a{
 font-size: 5vw;
 color: red;
+background-image: initial;
+background-color: rgba(255, 255, 255, 0 );
 }
  
 /* comienza el css dell detalle de productos */

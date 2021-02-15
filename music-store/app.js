@@ -1,17 +1,14 @@
 const express = require("express");
 const app = express();
-const path = require("path");
+const path = require('path');
+const routes = require('./routes/index');
 
-app.use('/static', express.static(__dirname + '/public'));
+app.use(express.static('./public'));
+app.set('view engine', 'ejs');
 
-const publicPath = path.resolve(__dirname, "./practicas-varias");
+app.use('/', routes);
+app.use('/detalle', routes);
 
-app.listen(3510, () => console.log("Funcionando en el puerto 3510"));
+const publicPath = path.resolve(__dirname, "/music-store");
 
-app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "views/home.html")
-    )});
-
-app.get("/detalles", function(req, res){
-    res.sendFile(path.join(__dirname, "views/productDetail.html")
-    )});
+app.listen(3000, () => console.log("Funcionando en el puerto 3000"));

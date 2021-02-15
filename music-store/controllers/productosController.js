@@ -1,8 +1,13 @@
-let productosController = {
-    listado : function() {},
-    crear : function() {},
-    detalle : function() {},
-    detalleComentarios : function() {},
-} 
+const express = require ('express');
 
-module.exports = productosController;
+const controlador = {
+home: (req,res) => {
+    res.render('home');
+},
+
+detalle: (req,res) => {
+    res.render('productDetail');
+}
+};
+
+module.exports = controlador;

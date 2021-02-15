@@ -8,50 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/static/css/normalize.css">
-    <link rel="stylesheet" href="/static/css/estilos.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilos.css">
     <meta name="viewport" content="width=device-wid th, initial-scale=1">
 </head>
-<header>
-        <img class="logo" src="/static/img/logo.jpeg" alt="">
-        <h1 class="titulo">Donde empieza la <span style="color: white">MÚSICA</span></h1>
-        <div class="main-options">
-            <ul class="options">
-                <li><a href="/productDetail"></a><i class="fas fa-guitar"></i></a></li>
-                <li><a href="/productDetail.html"></a><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="/static/productDetail.html"></a><i class="fas fa-globe-americas"></i></a></li>
-                <li><a href="/static/productDetail.html"></a><i class="fas fa-bars"></i></a></li>
-            </ul>
-        </div>
-    </header>
+<%- include ('./partials/header') %>
 <body class="bodydetalles">
     
     <div class="detalle-producto">
-        <img src="/static/img/lesPaul.jpeg" alt="">
+        <img src="/img/lesPaul.jpeg" alt="">
         <p>The new Les Paul Standard returns to the classic design that made it relevant, played and loved -- shaping sound across generations and genres of music. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50's has a solid mahogany body with a maple top, a rounded 50's-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with an ABR-1, the classic-style Tune-O-Matic bridge, aluminum stop bar tailpiece, vintage deluxe tuners with keystone buttons, and aged gold tophat knobs. The calibrated Burstbucker 1 (neck) and Burstbucker 2 (bridge) pickups are loaded with AlNiCo II magnets, audio taper potentiometers and orange drop capacitors.</p>
     <div class="info">
         <article class="precio">$1 500</article>
-        <button type="submit">Agregar</button>
         <select name="color" id="">
-            <option value="1/8">1/8 (44cm)</option>
-            <option value="1/4">1/4 (48cm)</option>
-            <option value="1/2">1/2 (53cm)</option>
-            <option value="3/4">3/4 (58cm)</option>
-            <option value="7/8">7/8 (62cm)</option>
-            <option value="4/4">4/4 (65cm)</option>
-        </select>
-    </div>
-    </div>
-    <br>
-    <div class="detalle-producto">
-            <img src="/static/img/fender.jpeg" alt="">
-            <p>Often copied, but never surpassed, the Stratocaster is arguably the world’s most-loved electric guitar. Electrifying the music world since its debut in 1954, its natural, versatile sound made the Stratocaster the benchmark for exceptional guitar tones. The American Professional Stratocaster isn’t a re-imagining of the classic design; it’s the authentic original model, evolved.
-
-                    This limited-edition model comes with a lightweight ash body in Antique Natural with a Tortoiseshell pickguard.</p>
-        <div class="info">
-            <article class="precio">$1 399</article>
-            <button type="submit">Agregar</button>
-            <select name="color" id="">
                 <option value="1/8">1/8 (44cm)</option>
                 <option value="1/4">1/4 (48cm)</option>
                 <option value="1/2">1/2 (53cm)</option>
@@ -59,18 +28,18 @@
                 <option value="7/8">7/8 (62cm)</option>
                 <option value="4/4">4/4 (65cm)</option>
             </select>
-        </div>
-        </div>
-        <br>
-        <div class="detalle-producto">
-                <img src="/static/img/acustica.jpeg" alt="">
-                <p>Often copied, but never surpassed, the Stratocaster is arguably the world’s most-loved electric guitar. Electrifying the music world since its debut in 1954, its natural, versatile sound made the Stratocaster the benchmark for exceptional guitar tones. The American Professional Stratocaster isn’t a re-imagining of the classic design; it’s the authentic original model, evolved.
-    
-                        This limited-edition model comes with a lightweight ash body in Antique Natural with a Tortoiseshell pickguard.</p>
-            <div class="info">
-                <article class="precio">$599</article>
-                <button type="submit">Agregar</button>
-                <select name="color" id="">
+        <button type="submit">Agregar</button>
+    </div>
+    </div>
+    <br>
+    <div class="detalle-producto">
+            <img src="/img/fender.jpeg" alt="">
+            <p>Often copied, but never surpassed, the Stratocaster is arguably the world’s most-loved electric guitar. Electrifying the music world since its debut in 1954, its natural, versatile sound made the Stratocaster the benchmark for exceptional guitar tones. The American Professional Stratocaster isn’t a re-imagining of the classic design; it’s the authentic original model, evolved.
+
+                    This limited-edition model comes with a lightweight ash body in Antique Natural with a Tortoiseshell pickguard.</p>
+        <div class="info">
+            <article class="precio">$1 399</article>
+            <select name="color" id="">
                     <option value="1/8">1/8 (44cm)</option>
                     <option value="1/4">1/4 (48cm)</option>
                     <option value="1/2">1/2 (53cm)</option>
@@ -78,7 +47,28 @@
                     <option value="7/8">7/8 (62cm)</option>
                     <option value="4/4">4/4 (65cm)</option>
                 </select>
+            <button type="submit">Agregar</button>
+        </div>
+        </div>
+        <br>
+        <div class="detalle-producto">
+                <img src="/img/acustica.jpeg" alt="">
+                <p>Often copied, but never surpassed, the Stratocaster is arguably the world’s most-loved electric guitar. Electrifying the music world since its debut in 1954, its natural, versatile sound made the Stratocaster the benchmark for exceptional guitar tones. The American Professional Stratocaster isn’t a re-imagining of the classic design; it’s the authentic original model, evolved.
+    
+                        This limited-edition model comes with a lightweight ash body in Antique Natural with a Tortoiseshell pickguard.</p>
+            <div class="info">
+                <article class="precio">$599</article>
+                <select name="color" id="">
+                        <option value="1/8">1/8 (44cm)</option>
+                        <option value="1/4">1/4 (48cm)</option>
+                        <option value="1/2">1/2 (53cm)</option>
+                        <option value="3/4">3/4 (58cm)</option>
+                        <option value="7/8">7/8 (62cm)</option>
+                        <option value="4/4">4/4 (65cm)</option>
+                    </select>
+                <button type="submit">Agregar</button>
             </div>
             </div>
+            <%- include ('./partials/footer') %>
 </body>
 </html>
