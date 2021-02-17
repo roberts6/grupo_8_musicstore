@@ -58,7 +58,7 @@ header{
 .options li {
     display: flex;
     margin: 5px;
-    width: 5%;
+    width: 25%;
     position: relative;
     bottom: 5px;
     left: -4px;
@@ -190,6 +190,14 @@ background-color: rgba(255, 255, 255, 0 );
     margin: 10% 10%;
 }
 
+.detalle-audio{
+    display: flex;
+    justify-content: space-between;
+    height: 30vw;
+    width: 75vw;
+    margin: 10% 10%;
+}
+
 .imagen-descripcion{
     display: flex;
     flex-direction: row;
@@ -208,7 +216,38 @@ background-color: rgba(255, 255, 255, 0 );
     margin: 0px -15%;
 }
 
+.info-audio {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 90%;
+    right: 7%;
+    width: 75vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin: 0px
+}
+
+.info-bateria {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 90%;
+    right: 30%;
+    width: 75vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin: 0px -15%;
+}
+
+
 .detalle-producto .precio{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    z-index: 1;
+}
+
+.detalle-audio .precio{
     background-image: initial;
     background-color: rgba(255, 255, 255, 0.5 );
     z-index: 1;
@@ -220,9 +259,21 @@ background-color: rgba(255, 255, 255, 0 );
     z-index: 1;
 }
 
+.info-audio select{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    z-index: 1;
+}
+
 .detalle-producto img{
     width: 14vw;
     height: 100%;
+}
+
+.detalle-audio img{
+    width: 30vw;
+    height: 100%;
+    margin-right: 2%;
 }
 
 .detalle-producto p{
@@ -233,9 +284,14 @@ background-color: rgba(255, 255, 255, 0 );
     margin: 2% 3%;
 }
 
-
-
 .detalle-producto:hover button{
+    background-image: initial;
+    background-color: white;
+    border: 3px rgb(247, 200, 112) solid;
+    text-decoration: none;
+}
+
+.detalle-audio:hover button{
     background-image: initial;
     background-color: white;
     border: 3px rgb(247, 200, 112) solid;
@@ -247,6 +303,64 @@ background-color: rgba(255, 255, 255, 0 );
     background-color: rgb(247, 200, 112);
     text-decoration: none;
 }
+
+.detalle-audio:active button{
+    background-image: initial;
+    background-color: rgb(247, 200, 112);
+    text-decoration: none;
+}
+
+
+/* Comienza el css del Login */
+
+.login{
+    font-size: 170%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.login input{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+}
+
+.login select{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+}
+
+.login input:focus{
+    border-radius: 10%;
+    border: 3px rgb(247, 200, 112) solid;
+}
+
+.boton-enviar:hover{
+    background-image: initial;
+    background-color: white;
+    border: 3px rgb(247, 200, 112) solid;
+    text-decoration: none;
+}
+
+.boton-enviar:active {
+    background-image: initial;
+    background-color: rgb(247, 200, 112);
+    text-decoration: none;
+}
+
+/* comienza css de carga de productos */
+
+.tipoProducto{
+    display: flex;
+    flex-direction: column;
+};
+
+.radio{
+    border: violet solid 3px;
+};
+
 
 @media(min-width: 361px){
    .options i{

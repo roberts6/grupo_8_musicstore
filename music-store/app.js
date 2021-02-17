@@ -7,7 +7,11 @@ app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
 app.use('/', routes);
-app.use('/detalle', routes);
+app.use('/guitarradetalle', routes);
+app.use('/bajosdetalle', routes);
+app.use('/bateriasdetalle', routes);
+app.use('/login', routes);
+app.use('/cargaProductos', routes);
 
 const publicPath = path.resolve(__dirname, "/music-store");
 

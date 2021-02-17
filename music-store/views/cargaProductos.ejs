@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/head') %>
+
+<%- include ('./partials/header') %>
+<title>Cargo Productos</title>
+<body>
+    <div class="login">
+        <label for="producto">Nombre del producto</label>
+        <input type="text" id="producto" placeholder="Squire">
+        <br>
+    <div class="tipoProducto">
+        <label for="tipoProducto">Tipo de producto</label> 
+        <br>
+        <div class="radio">
+        <input type="radio" name="tipousuario" id="tipousuario" value="nuevo" class="radio" required> Nuevo
+         <br>
+         <input type="radio" name="tipousuario" id="tipousuario" value="usado" class="radio" required> Usado
+        </div>
+    </div>
+        <br>
+        <br>
+        <label for="precio">$$$$</label>
+        <input type="number" id="precio" placeholder="$1" required>
+        <br>
+        <label for="tamañoProducto">Tamaño de tu producto</label>
+        <select name="tamañoProducto" id="tamañoProducto">
+            <option value="unico">Único</option>
+            <option value="1/8">1/8 (44cm)</option>
+            <option value="1/4">1/4 (48cm)</option>
+            <option value="1/2">1/2 (53cm)</option>
+            <option value="3/4">3/4 (58cm)</option>
+            <option value="7/8">7/8 (62cm)</option>
+            <option value="4/4">4/4 (65cm)</option>
+            <option value="30">30" (76,2cm)</option>
+            <option value="34">34" (86,4cm)</option>
+            <option value="36">36" (91,4cm)</option>
+            <option value='10"'>10"</option>
+            <option value='11"'>11"</option>
+            <option value='12"'>12"</option>
+            <option value='13"'>13"</option>
+            <option value='14"'>14"</option>
+            <option value='15"'>15"</option>
+        </select>
+        <br>
+        <br>
+        <label for="cantidad">Cantidad</label>
+        <select name="cantidad" id="cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="+20">+ 20</option>
+            <option value="+50">+ 50</option>
+            <option value="+100">+ 100</option>
+        </select>
+         <br>
+         <br>
+         <br>
+        <button class="boton-enviar" type="submit">Enviar</button>
+    </div>
+</body>
+</html>

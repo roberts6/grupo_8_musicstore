@@ -1,0 +1,204 @@
+*{
+    background-image: url(/img/instrumentos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    /*box-sizing: border-box; me va a ayudar a que por más que cambie la pantalla del dispositivo no cambien las medidas relativas asignadas*/
+    font-family: 'Amatic SC', cursive; 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 8%;
+    height: 8%;
+    margin: 3% 3%;
+    border-radius: 15%;
+}
+
+.titulo{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    width: 50%;
+    font-size: 6vw;
+    margin: 5% 0%;
+    position: relative;
+    left: 9%;
+    z-index: 1;
+}
+
+.options{
+    list-style: none;
+    display: flex;
+    border: solid 1px black;
+    align-content: center;
+    margin: 30px 20px 20px 2px;
+    padding: 2%;
+    width: 50%;
+    height: 20%;
+    position: relative;
+    left: 30%;
+    top: -2vw;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.7 )
+}
+
+.options i{
+    color: rgb(0,0,0);
+    background-image: initial;
+    font-size: 2vw;
+    position: absolute;
+}
+
+.options li {
+    display: flex;
+    margin: 5px;
+    width: 5%;
+    position: relative;
+    bottom: 5px;
+    left: -4px;
+}
+
+.main-options{
+    width: 30%;
+    position: relative;
+}
+
+h1{ text-align: center;
+    font-family: 'Pirata One', cursive;
+    font-family: 'Staatliches', cursive;}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bodydetalles{
+    margin: auto;
+    padding: 1%;
+}
+
+.detalle-bateria{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 30vw;
+    width: 75vw;
+    margin: 10% 10%;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px 0% 0% 100%;
+    padding-right: 6%;
+}
+
+.imagen-descripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+.precio{
+    width: 10%;
+}
+
+.info-bateria
+   {display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 90%;
+    right: 40%;
+    width: 75vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin: 0px -15%;
+}
+
+.detalle-bateria img {
+    width: 38vw;
+    height: 100%;
+    margin-right: 1%;
+}
+
+footer{
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0.5 );
+    border: solid 0.2px;
+    line-height:0;
+    margin-top: 8vw;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0px;
+    font-size: 3.5vw;
+    padding: 0px 10px;
+    text-align: center;
+    list-style: none;
+    margin: 10vw 0%;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.accion-pie a{
+    color: white;
+    transition: all 450ms;
+    z-index: 1;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0 );
+}
+
+.accion-pie:hover a{
+font-size: 5vw;
+color: red;
+background-image: initial;
+background-color: rgba(255, 255, 255, 0 );
+}
+
+@media(min-width: 361px){
+    .options i{
+     position: absolute;
+    }
+ 
+    .options li{
+     margin: 9%;
+     left: 0px;
+     bottom: 1.3vw;
+    }
+ 
+    .options a i{
+        justify-content: space-between;
+    }
+ 
+    .options{
+     width: 50%;
+     height: 20%;
+     position: relative;
+     top: -7%;
+ }
+ }
+ 
+ @media(min-width: 450px){
+     .options {top: 6%;}
+ }
+ 
+ @media(min-width: 600px){
+     .options {top: 12%;}
+ }
+ 
+ 
+ @media(min-width: 814px){
+     .options{
+         top: 22%;
+     }
+ }
