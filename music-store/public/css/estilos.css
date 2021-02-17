@@ -403,6 +403,17 @@ background-color: rgba(255, 255, 255, 0 );
     }
 }
 
+@media(min-width: 1000px){
+    .logo img{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1800px){
+    .logo img{
+        width: 115%;
+    }
+}
 
 /*
 los estándares que se manejan para los medias queries son de:
