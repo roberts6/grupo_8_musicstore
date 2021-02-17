@@ -14,10 +14,10 @@ header{
     justify-content: space-between;
 }
 
-.logo{
-    width: 8%;
-    height: 8%;
-    margin: 3% 3%;
+.logo img{
+    width: 60%;
+    height: 50%;
+    margin: 30%;
     border-radius: 15%;
 }
 
@@ -28,7 +28,7 @@ header{
     font-size: 6vw;
     margin: 5% 0%;
     position: relative;
-    left: 9%;
+    left: 3%;
     z-index: 1;
 }
 
@@ -62,6 +62,8 @@ header{
     position: relative;
     bottom: 5px;
     left: -4px;
+    background-image: initial;
+    background-color: rgba(255, 255, 255, 0 );
 }
 
 .main-options{
@@ -397,8 +399,10 @@ background-color: rgba(255, 255, 255, 0 );
 @media(min-width: 814px){
     .options{
         top: 22%;
+        height: 18%;
     }
 }
+
 
 /*
 los estándares que se manejan para los medias queries son de:
