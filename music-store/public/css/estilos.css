@@ -40,7 +40,7 @@ header{
     margin: 30px 20px 20px 2px;
     padding: 2%;
     width: 50%;
-    height: 12%;
+    height: 3.5vw;
     position: relative;
     left: 30%;
     top: -2vw;
@@ -324,7 +324,7 @@ overflow: auto;
 /* Comienza el css del Login */
 
 .login{
-    font-size: 170%;
+    font-size: 3.5vw;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -389,7 +389,6 @@ overflow: auto;
 
    .options{
     width: 50%;
-    height: 20%;
     position: relative;
     top: -7%;
 }
@@ -407,7 +406,6 @@ overflow: auto;
 @media(min-width: 814px){
     .options{
         top: 22%;
-        height: 18%;
     }
 }
 
