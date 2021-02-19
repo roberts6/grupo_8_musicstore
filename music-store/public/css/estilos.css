@@ -15,8 +15,7 @@ header{
 }
 
 .logo img{
-    width: 60%;
-    height: 50%;
+    width: 9vw;
     margin: 30%;
     border-radius: 15%;
 }
@@ -81,6 +80,68 @@ nav {
     justify-content: space-around;
 }
 
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    width: 400%;
+    animation: cambio 14s infinite;
+    animation-direction: alternate;
+}
+
+.slider li{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+}
+
+.slider img{
+    margin: 0px auto;
+    width: 40vw;
+    height: 20vh;
+    text-align: center;
+    object-fit: contain;
+}
+
+.slide1{
+    display: flex;
+    justify-content: space-between;
+}
+
+li i{
+    position: relative;
+    font-size: 10vw;
+    margin-right: 15vw;
+}
+
+li h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 10vw;
+    margin: auto 5%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 .cajas{
     display: flex;
     justify-content: space-between;
@@ -132,8 +193,8 @@ border: solid 1px black;
 
 .banner{
     display: flex;
-    width: 75vw;
-    height: 30vh;
+    width: 50%;
+    height: 50%;
     position: relative;
     margin: 0px auto;
 }
@@ -412,19 +473,12 @@ overflow: auto;
     .options{
         top: 22%;
     }
-}
-
-@media(min-width: 1000px){
-    .logo img{
-        width: 100%;
+    .slider img{ 
+        width: 50vw;
+        height: 30vh;
     }
 }
 
-@media(min-width: 1800px){
-    .logo img{
-        width: 115%;
-    }
-}
 
 /*
 los estándares que se manejan para los medias queries son de:
