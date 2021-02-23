@@ -27,7 +27,20 @@ audio: (req,res)=>{
 
 cargaProducto: (req,res) =>{
     res.render('cargaProductos');
+},
+
+productoNuevo: (req,res)=>{
+    let productoNuevo = {
+      producto: req.body.producto,
+      tipousuario: req.body.tipousuario,
+      precio: req.body.precio,
+      tamañoProducto: req.body.tamañoProducto,
+      cantidad: req.body.cantidad,
+      foto: req.body.foto
+    }   
+     res.send(productoNuevo);
 }
+
 };
 
 module.exports = controlador;

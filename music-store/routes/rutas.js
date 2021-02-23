@@ -11,5 +11,6 @@ router.get('/bateriasdetalle', controlador.bateriasdetalle);
 router.get('/login', controlador.login);
 router.get('/audio', controlador.audio);
 router.get('/cargaProductos', controlador.cargaProducto);
+router.post('/cargaProductos', controlador.productoNuevo);
 
 module.exports = router;

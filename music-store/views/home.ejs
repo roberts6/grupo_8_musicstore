@@ -10,9 +10,9 @@
     <div class="slider">    
      <ul>
          <li class="slide1"><h1>Ofertas de la semana</h1><i class="far fa-grin-hearts"></i></li>
-         <li id="slide2"><img src="/img/bateria4.jpeg" alt=""></li>
-         <li id="slide3"><img src="/img/bajobanner.jpeg" alt=""></li>
-         <li id="slide3"><img src="/img/bannerslider.jpeg" alt=""></li>
+         <li class="slide"><img src="/img/bateria4.jpeg" alt=""><h2>Baterías</h2><h5>Hasta 30% OFF</h5></li>
+         <li class="slide"><img src="/img/bajobanner.jpeg" alt=""><h2>Bajos</h2>Hasta 10% OFF</li>
+         <li class="slide"><img src="/img/bannerslider.jpeg" alt=""><h2>Accesorios</h2>Hasta 60% OFF</li>
      </ul>
     </div> 
 </div>
@@ -42,8 +42,17 @@
     </article>    
     </div>
 
-    <img class="banner" src="/img/segundobanner.jpg" alt="segundobanner">
-
+    <div class="contenedor-manual">
+        <div class="slider-manual" id="slider-manual">
+            <div class="slider__section"><img src="/img/frigobar.jpg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/monitorII3.jpeg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/acustica.jpeg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/ropa.jpeg" alt="" class="slider__img"></div>
+        </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">></div>
+    <div class="slider__btn slider__btn--left" id="btn-left"><</div>
+    </div>
+   <script src="slider.js"></script>
 <%- include ('./partials/footer') %>
 
 </body>
