@@ -6,27 +6,27 @@ home: (req,res) => {
 },
 
 guitarradetalle: (req,res) => {
-    res.render('guitarraDetail');
+    res.render('productos/guitarraDetail');
 },
 
 bajosdetalle: (req,res) => {
-    res.render('bajosDetail');
+    res.render('productos/bajosDetail');
 },
 
 bateriasdetalle: (req,res) => {
-    res.render('bateriasDetail');
+    res.render('productos/bateriasDetail');
 },
 
 login: (req,res) => {
-    res.render('login');
+    res.render('user/login');
 },
 
 audio: (req,res)=>{
- res.render('audio');
+ res.render('productos/audio');
 },
 
 cargaProducto: (req,res) =>{
-    res.render('cargaProductos');
+    res.render('productos/cargaProductos');
 },
 
 productoNuevo: (req,res)=>{
