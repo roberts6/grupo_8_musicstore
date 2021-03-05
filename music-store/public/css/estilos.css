@@ -65,6 +65,26 @@ header{
     background-color: rgba(255, 255, 255, 0 );
 }
 
+
+
+
+.options .etiqueta {
+    display: none;
+    transition: display 0.5;
+}
+/**  intento de etiquetas bajo los botones del main-options
+.options:hover .etiqueta {
+    display: flex;
+    position: relative;
+    top: 5vw;
+    right: 5rem;
+    font-size: 3vw;
+    width: 0;
+    height: 0;
+}
+
+*/
+
 .main-options{
     width: 30%;
     position: relative;
@@ -73,6 +93,39 @@ header{
 h1{ text-align: center;
     font-family: 'Pirata One', cursive;
     font-family: 'Staatliches', cursive;}
+
+.Error {
+    font-family: 'Amatic SC', cursive; 
+    text-align: center;
+    font-size: 7vw;
+}
+
+h3 .Error{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a h3{
+    text-decoration: none;
+    color: rgb(68, 53, 53);
+    opacity: 0.4;
+}
+
+a h3:hover{
+    transition: all 550ms;
+    opacity: 1;
+    color: black;
+}
+
+.Ierror{
+    width: 75vw;
+    margin-left: 13%;
+}
+
+
 
 nav {
     display: flex;
@@ -524,7 +577,7 @@ right: 2%;
    }
 
    .options li{
-    margin: 9%;
+    margin: 11% 2%;
     left: 0px;
     bottom: 1.3vw;
    }

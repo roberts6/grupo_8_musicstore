@@ -11,9 +11,18 @@ app.set('view engine', 'ejs'); /* configuración para poder usar la plantilla de
 app.use(express.urlencoded({extended: false})); /* siempre que se use el method POST hay que configurar con esta linea y la de abajo a express para que me permita capturar la información puesta en los form */
 app.use(express.json());
 
+const methodOverride = require ('method-override'); /* estas 2 líneas hacen posible enviar info por PUT y DELETE en cualquier navegador */
+app.use (methodOverride('_method'));
+
+
 app.use('/', routes);
 app.use('/productos', rutaProductos);
 app.use('/user', rutaUsuarios);
+
+app.use((req,res,next)=> {
+    res.status(404).render("not-found")
+});
+
 
 const publicPath = path.resolve(__dirname, "/music-store");
 

@@ -6,18 +6,21 @@
 <%- include ('../partials/header') %>
 <title>Cargo Productos</title>
 <body>
-    <form action="/user/registro" method="POST">
+    <form action="/productos/create" method="POST" enctype="multipart/form-data">
     <div class="login">
         <label for="producto">Nombre del producto</label>
         <input type="text" name="producto" placeholder="Squire">
+        <br>
+        <label for="marca">Marca</label>
+        <input type="text" name="marca" placeholder="Fender">
         <br>
     <div class="tipoProducto">
         <label for="tipoProducto">Tipo de producto</label> 
         <br>
         <div class="radio">
-        <input type="radio" name="tipousuario" id="tipousuario" value="nuevo" class="radio" required> Nuevo
+        <input type="radio" name="tipoProducto" id="tipoProducto" value="nuevo" class="radio" required> Nuevo
          <br>
-         <input type="radio" name="tipousuario" id="tipousuario" value="usado" class="radio" required> Usado
+         <input type="radio" name="tipoProducto" id="tipoProducto" value="usado" class="radio" required> Usado
         </div>
     </div>
         <br>
@@ -75,7 +78,7 @@
           <br>
           <br>
           <label for="foto">Foto</label>
-        <input type="file" name="foto" id="foto">
+        <input type="file" name="fotoProducto" id="fotoProducto">
          <br>
          <br>
          <br>
