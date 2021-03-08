@@ -64,26 +64,148 @@ header{
     background-image: initial;
     background-color: rgba(255, 255, 255, 0 );
 }
+	
 
-
-
-
-.options .etiqueta {
+li .etiqueta {
     display: none;
-    transition: display 0.5;
+    transition: all 450ms;
 }
-/**  intento de etiquetas bajo los botones del main-options
-.options:hover .etiqueta {
+
+/**  etiquetas bajo los botones del main-options */
+li:hover .etiqueta {
     display: flex;
     position: relative;
     top: 5vw;
-    right: 5rem;
-    font-size: 3vw;
+    right: 4rem;
+    font-size: 2.5vw;
     width: 0;
     height: 0;
+    z-index: 1;
 }
 
-*/
+/* desplegable del login */
+
+.menuDesplegable{
+margin-top: 11%;
+margin-left: -3%;
+}
+
+.desplegable{
+    position: absolute;
+}
+
+.containerLogin{
+    display: block;
+    padding: 0px;
+    width: 0px;
+}
+
+.containerLogin:hover{
+    display: block;
+}
+
+.form-box{
+    width: 45vw;
+    height: 60vh;
+    background-image: initial;
+    background-color: #fff;
+    padding: 5%;
+    z-index: 1;
+    border-radius: 2%;
+    position: relative;
+    right: 60vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.button-box{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 3%;
+    position: relative;
+    background-image: initial;
+    box-shadow: rgba(220, 220, 218, 1);
+}
+
+.presionar{
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    border-radius: 10%;
+    width: 14vw;
+    height: 6vh;
+    background: linear-gradient(to right, rgba(138, 138, 138, 1), rgba(212, 212, 212, 1));
+}
+
+.presionar:hover{
+    color:white;
+}
+
+#elegir{
+    top: 0;
+    border-radius: 15%;
+    width: 100%;
+    height: 15%;
+    margin-left: 16%;
+    background-image: initial;
+    transition: 0.8s;
+    font-size: 2vw;
+}
+
+.input-group{
+    margin: 20% 15%;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.8s;
+    height: 30vh;
+    width: 35vw;
+    background: center;
+}
+
+.input-field{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    margin-bottom: 5%
+}
+
+
+.input-group:hover button {
+    background-image: initial;
+    background-color: white;
+    border: 3px rgb(247, 200, 112) solid;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-group:active button{
+    background-image: initial;
+    background-color: rgb(247, 200, 112);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkbox-button{
+    margin: 3%;
+    cursor: pointer;
+}
+
+.opciones-registro{
+    text-align: center;
+    font-size: 2vw;
+}
+
+#login{
+    left: 0%;
+}
+
+#registrar{
+    left: 155%;
+}
 
 .main-options{
     width: 30%;
@@ -456,6 +578,15 @@ overflow: auto;
     width: 100%;
     align-items: center;
     margin: 10% auto;
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+.login a:hover{
+    color: white;
 }
 
 .login input{

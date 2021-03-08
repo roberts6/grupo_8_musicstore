@@ -81,6 +81,10 @@ create: (req,res)=>{
     res.render('productoEdit', {productoEdit, productoEdit});
 } */
 
+registro: (req,res) => {
+    res.render('user/registro');
+}
+
 };
 
 module.exports = controlador;

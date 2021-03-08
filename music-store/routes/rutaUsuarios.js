@@ -5,4 +5,6 @@ const controlador = require('../controllers/productosController');
 
 router.get('/login', controlador.login);
 
+router.get('/registro', controlador.registro);
+
 module.exports = router;

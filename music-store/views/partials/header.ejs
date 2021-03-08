@@ -3,23 +3,79 @@
     <h1 class="titulo">Donde empieza la <span style="color: white">MÚSICA</span></h1>
     <div class="main-options">
         <ul class="options">
-            <li><a href='#'><i class="fas fa-guitar"></i></a></li>
+            <li><a href='#'><i class="fas fa-guitar"></i></a>
             <ul class="etiqueta">
-                <li>Login</li>
-            </ul>    
-            <li><a href="/productos/productDetail"><i class="fas fa-shopping-cart"></i></a></li>
+                <li>-</li>
+            </ul>
+        </li>    
+            <li><a href="/productos/productDetail"><i class="fas fa-shopping-cart"></i></a>
             <ul class="etiqueta">
                 <li>Carrito</li>
-            </ul>    
-            <li><a href="/productos/create"><i class="fas fa-arrow-circle-up"></i></a></li>
+            </ul>  
+        </li>  
+            <li><a href="/productos/create"><i class="fas fa-arrow-circle-up"></i></a>
             <ul class="etiqueta">
                 <li>Upload</li>
-            </ul>    
-            <li><a href="/user/login"><i class="fas fa-address-card"></i></a>
-            <ul class="etiqueta">
-                <li>Regístrate</li>
-            </ul>        
+            </ul>   
+        </li> 
+         
+        <li><i class="fas fa-address-card"></i>
+            <div class="menuDesplegable">  
+            <div class='containerLogin'>
+                <div class="form-box">
+                    <div class="button-box">
+                     <div id="elegir">
+                         <button type="button" class="presionar" onclick="login()">Iniciar sesión</button>
+                         <button type="button" class="presionar" onclick="registrar()">Regístrate</button>
+                     </div>
+                     <form id="login" action="/create" method="POST" class="input-group">
+                        <input type="email" class="input-field" name="email" id="email" placeholder="Tu correo es..." required>
+                        <input type="password" class="input-field" name="password" id="password" placeholder="Tu contraseña es..." required>
+                    <div class="opciones-registro">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-button">recuérdame
+                        <button type="submit" onclick="login()">a rockear!</button>
+                        </div>
+                    </form>
+                    <form id="registrar" action="/create" method="POST" class="input-group">
+                        <input type="text" class="input-field" name="Nombre/sYapellido/s" id="Nombre/sYapellido/s" placeholder="Nombre/s y Apellido/s">
+                        <input type="email" class="input-field" name="email" id="email" placeholder="Tu correo es..." required>
+                        <input type="password" class="input-field" name="password" id="password" placeholder="Tu contraseña es..." required>
+                        <input type="text" class="input-field" name="banda" id="banda" placeholder="Tu banda preferida es...">
+                    <div class="opciones-registro">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-button">Acepto términos y condiciones
+                        <button type="submit">a rockear!</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div> 
+            </div>  
+                <ul class="etiqueta">
+                <li>Login</li>
+            </ul>   
+        </div>     
             </li>
         </ul>
+    
+        <script>
+                let x = document.getElementById('login');
+                let y = document.getElementById('registrar');
+                let z = document.getElementById('elegir');
+                
+                function login(){
+                    x.style.left = "0";
+                    y.style.left = "155%";
+                    z.style.left = "0";
+                }
+                
+                function registrar(){
+                    x.style.left = "-155%";
+                    y.style.left = "0";
+                    z.style.left = "25%";
+                }
+                
+                </script>
+
     </div>
 </header>
+
